@@ -50,3 +50,10 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.5
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
+
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java7='export JAVA_HOME=$JAVA_7_HOME'
+
